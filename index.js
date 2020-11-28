@@ -64,4 +64,4 @@ app.get('/', (req, res) => {
   res.send('Database connected')
 })
 
-app.listen(port);
+app.listen(process.env.PORT || PORT);
